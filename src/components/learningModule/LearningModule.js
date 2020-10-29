@@ -39,9 +39,10 @@ const LearningModule = ({setGameStatus}) => {
   }
 
 
+
   return (
     <div className="learningModule">
-      <ProgressBar questionId={currentQuestionId+1}/>
+      <ProgressBar questionId={currentQuestionId+1} totalQuestions={quizData.totalQuestions+1}/>
       { currentQuestion.title &&
         <>
           <div className="learningModule--header">
